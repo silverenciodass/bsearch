@@ -14,22 +14,16 @@ class BSearch
 
         BSearch();
         ~BSearch();
+
+        std::vector<int> get_array();
+        void set_array(std::vector<int>);
+
+        void add_item(int);
         
-        std::vector<int> get_array() {
-	        return this->array;
-        }
+        void set_operations(int);
+        int BSearch::get_operations();
         
-        void set_array(std::vector<int> array) {
-	        this->array = array;
-        }
-        
-        int get_operations() {
-	        return this->operations;
-        }   
-        
-        void set_operations(int operations) {
-	        this->operations = operations;
-        }
+
         
 };
 
